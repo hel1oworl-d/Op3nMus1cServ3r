@@ -1,0 +1,46 @@
+{
+  "project_name": "Hel1oMus1c",
+  "domain": "hel1o.hel1ow0rld.ru",
+  "api": {
+    "host": "127.0.0.1",
+    "port": 8001
+  },
+  "services": {
+    "telegram_bot": {
+      "enabled": true,
+      "systemd_service": "openmusic-bot.service"
+    },
+    "youtube_music": {
+      "enabled": true,
+      "systemd_service": "openmusic-yt.service",
+      "host": "127.0.0.1",
+      "port": 8010
+    },
+    "soundcloud": {
+      "enabled": true,
+      "systemd_service": "openmusic-sc.service",
+      "host": "127.0.0.1",
+      "port": 8011
+    },
+    "lrclib": {
+      "enabled": true,
+      "systemd_service": "openmusic-lrc.service",
+      "host": "127.0.0.1",
+      "port": 8012
+    }
+  },
+  "security": {
+    "app_secret_header": "X-App-Secret",
+    "app_secret_key": "YOUR_APP_SECRET_KEY",
+    "allowed_user_agents": [
+      "Hel1oMus1c",
+      "Hel1oMus1c-App"
+    ],
+    "rate_limit_per_minute": 120,
+    "jwt_secret": "YOUR_JWT_SECRET_KEY",
+    "jwt_algorithm": "HS256",
+    "access_token_expire_minutes": 30,
+    "refresh_token_expire_days": 60,
+    "min_client_version": "1.0.0"
+  }
+}

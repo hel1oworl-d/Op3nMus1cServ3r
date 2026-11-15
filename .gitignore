@@ -1,0 +1,39 @@
+__pycache__/
+*.py[cod]
+*.class
+*.swp
+*.swo
+.DS_Store
+
+# Virtualenv
+venv/
+.env
+env/
+ENV/
+
+# Sensitive database configs
+database/config.py
+bot/config.py
+
+# User uploads and media storage (do not commit GBs of audio/images)
+uploads/track/*
+!uploads/track/.gitkeep
+users/avatar/*
+!users/avatar/.gitkeep
+users/baner/*
+!users/baner/.gitkeep
+users/badges/*
+!users/badges/.gitkeep
+uploads/releases/*
+!uploads/releases/.gitkeep
+
+# Temporary cache
+/tmp/
+*.log
+music.json
+!music.example.json
+music.json
+*.key
+*.pem
+.env
+!music.example.json

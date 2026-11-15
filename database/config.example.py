@@ -1,0 +1,5 @@
+DB_HOST = "127.0.0.1"
+DB_PORT = 3306
+DB_USER = "hel1omus1c"
+DB_PASS = "YOUR_SECURE_PASSWORD"
+DB_NAME = "hel1omus1c"
